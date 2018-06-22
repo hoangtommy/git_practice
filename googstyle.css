@@ -1,18 +1,19 @@
+body {
+	font-family: sans-serif;
+}
+
 header {
-  margin-top: 30px;
+  	margin-top: 20px;
+  	font-size: .85em;
 }
 
 ul li {
 	padding: 0 10px 0 5px;
-}
-
-header ul li {
-  display: inline;
+	display: inline;
 }
 
 li img {
 	height: 25px;
-	border-radius: 50%;
 }
 
 #signin {
@@ -22,34 +23,63 @@ li img {
 }
 
 #main {
-  margin: auto;
-  width: 50%;
+ 	padding-top: 30px;
+ 	margin: auto;
+  	width: 50%;
 }
 
 #search-bar {
 	height: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 form {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
 input[type="text"] {
 	width: 85%;
+	/* Need to add box shadow */
+	box-shadow: 0px 3px 1px 1px #dedee0;
+}
+
+form img {
+	width: 35px;
+	position: absolute;
+	right: 390px;
+	top: 315px;
 }
 
 input[type="submit"] {
 	background: #F4F4F4;
-	padding: 10px;
+	padding: 12px;
+	margin-right: 5px;
 	font-weight: bold;
 	border: none;
+	font-size: .9em;
+	color: grey;
 }
 
-#security-pic img {
-	height: 30px;
+input[type="submit"]:hover {
+	color: black;
+	background: dark grey;
+	border: .5px solid grey;
+}
+
+#security-phrase {
+	font-size: .8em;
+	text-align: center;
+}
+
+#security-phrase p {
+	padding-bottom: 5px;
+}
+
+#security-phrase img {
+	height: 40px;
 	float: left;
+	left: 80px;
 }
 
 #security-phrase a {
@@ -59,13 +89,16 @@ input[type="submit"] {
 footer {
 	background: #F0F0F0;
 	width: 100%;
-	height: ;
 	padding: 2px 0 2px 0;
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #E0E0E0;
+	font-size: .7em;
 }
 
 footer ul li {
-  display: inline;
-  padding: 0 40px 0 0;
+  	display: inline;
+ 	padding: 0 40px 0 0;
 }
 
 li.rightside {
@@ -73,7 +106,6 @@ li.rightside {
 }
 
 a {
-	font-family: sans-serif;
 	text-decoration: none;
 	color: #434343;
 }
