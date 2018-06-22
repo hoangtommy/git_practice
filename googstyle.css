@@ -41,13 +41,14 @@ form {
 input[type="text"] {
 	width: 85%;
 	/* Need to add box shadow */
-	box-shadow: 0px 3px 1px 1px #dedee0;
+	border: .5px solid #d4d4d6;
+	box-shadow: 0px 1px 1px 1px #dedee0;
 }
 
 form img {
 	width: 35px;
 	position: absolute;
-	right: 390px;
+	right: 375px;
 	top: 315px;
 }
 
@@ -59,6 +60,7 @@ input[type="submit"] {
 	border: none;
 	font-size: .9em;
 	color: grey;
+	text-align: center;
 }
 
 input[type="submit"]:hover {
@@ -67,22 +69,30 @@ input[type="submit"]:hover {
 	border: .5px solid grey;
 }
 
-#security-phrase {
+#security-section {
 	font-size: .8em;
 	text-align: center;
+	display: grid;
+	grid-template-columns: 10% 8% 75%;
 }
 
-#security-phrase p {
-	padding-bottom: 5px;
+#security-shield {
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
-#security-phrase img {
-	height: 40px;
-	float: left;
-	left: 80px;
+#security-shield img {
+	height: 45px;
+	float: right;
 }
 
-#security-phrase a {
+#security-text {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	padding-top: 15px;
+}
+
+#security-text a {
 	color: blue;
 }
 
